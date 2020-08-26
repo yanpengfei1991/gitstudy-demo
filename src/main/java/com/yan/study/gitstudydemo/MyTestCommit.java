@@ -12,5 +12,7 @@ public class MyTestCommit {
         System.out.println("我打算再开一个bug分支");
         System.out.println("我刚又开创了一个bug分支并使用stash把工作区暂存");
 
+
+
     }
 }
