@@ -12,6 +12,6 @@ public class MyTestCommit {
         System.out.println("我打算再开一个bug分支");
         System.out.println("我刚又开创了一个bug分支并使用stash把工作区暂存");
 
-        System.out.println("我刚修复了bug不知道别的分支会不会可以直接使用呢？");
+        System.out.println("我刚修复了bug不知道别的分支会不会可以直接使用呢？1");
     }
 }
