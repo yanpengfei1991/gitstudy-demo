@@ -103,7 +103,7 @@ public class LinkedList<E> {
     }
 
     //获得链表的第一个元素
-    public E getFirest(){
+    public E getFirst(){
         return get(0);
     }
     //获取最后一个
