@@ -16,15 +16,11 @@ public class MergeSort {
     }
 
     private  static  <E extends Comparable<E>> void sort(E arr[],int l,int r){
-//        if( l >= r){
-//          return;
-//        }
-
-        //利用插入排序进行优化,在小范围内插入排序的时间更快
-        if( r - l <= 15){
-            InsertSort.insertSort(arr,l,r);
-            return;
+        if( l >= r){
+          return;//这里可以使用插入排序优化
         }
+
+
 //        int mid = ( l +r )/2;
         int mid = l+(r-l)/2;//防止数组越界
         sort(arr,l,mid);
