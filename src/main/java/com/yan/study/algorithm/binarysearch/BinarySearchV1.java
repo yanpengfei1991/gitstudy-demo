@@ -33,7 +33,22 @@ public class BinarySearchV1 {
             return  binarySearchR(arr,target,l,r);
 
     }
-
+    //< target 最大值索引
+    public static <E extends Comparable<E>> int lower(E []arr,E target) {
+            int l  = -1;
+            int r = arr.length-1;
+            while (l < r ){
+                // l和r相邻时出现死循环，搜索空间没有变化
+//                int mid = l+(r-l)/2;
+                int mid = l+(r-l+1)/2;
+                if(arr[mid].compareTo(target) < 0){
+                    l = mid;
+                }else{
+                    r = mid -1;
+                }
+            }
+         return -1;
+    }
     //二分查找法的非递归写法
     public static <E extends Comparable<E>> int binarySearch(E []arr,E target){
 
