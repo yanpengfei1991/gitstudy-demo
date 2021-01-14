@@ -105,7 +105,7 @@ public class MaxHeap<E extends Comparable<E>> {
                 // 右孩子下标进行替换, 这里也可以直接写成swapIndex ++;
                 swapIndex = rightChild(index);
             }
-
+            //此时swapIndex是上面对比后的最大值
             if (data.get(swapIndex).compareTo(data.get(index)) > 0) {
                 swap(index, swapIndex);
                 index = swapIndex;
